@@ -3,12 +3,13 @@
 <html>
     <head>
         <!-- Set viewport
-            - width: viewport 宽度，可以指定的一个值，也可等于 device-width （设备宽度）
-            - height: viewport 高度
-            - initial-scale: 初始缩放比例
-            - maximum-scale: 最大缩放比例
-            - minimum-scale: 最小缩放比例
-            - user-scalable: 是否允许用户缩放 yes/no  -->
+            width: viewport 宽度，可以指定的一个值，也可等于 device-width （设备宽度）
+            height: viewport 高度
+            initial-scale: 初始缩放比例
+            maximum-scale: 最大缩放比例
+            minimum-scale: 最小缩放比例
+            user-scalable: 是否允许用户缩放 yes/no
+        -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         
         <!-- 在 iOS 7 Safari 页面顶部显示此 App 在应用商店的快捷访问链接 -->
@@ -17,20 +18,24 @@
         <!-- 移动端友好 -->
         <meta name="HandheldFriendly" content="True">
 
-        <!-- 固定显示尺寸 -->
+        <!-- 强制固定页面布局尺寸 -->
         <meta name="MobileOptimized" content="320">
 
         <!-- 全屏模式 -->
         <meta name="apple-mobile-web-app-capable" content="yes">
 
-        <!-- 指定 safari 状态栏样式：default（白色），black（黑色）和 black-translucent（灰色半透明） -->
+        <!-- 全屏模式时，指定 safari 状态栏样式：default（白色），black（黑色）和 black-translucent（灰色半透明） -->
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
         <!-- 自定义主屏幕图标的名称 -->
         <meta name="apple-mobile-web-app-title" content="Web App">
 
-        <!-- 不把长数字作为可拨电话号码 -->
-        <meta name="format-detection" content="telephone=no">
+        <!-- set format-detection
+            telephone=no：禁止自动将页面中的数字识别为电话号码
+            address=no：禁止自动地址转为链接
+            email=no：禁止自动将email转为链接
+        -->
+        <meta name="format-detection" content="telephone=no;address=no;email=no" />
 
         <meta name="Author" contect="Mr.Yang" >
 
