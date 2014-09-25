@@ -25,7 +25,7 @@
             maximum-scale: 最大缩放比例
             minimum-scale: 最小缩放比例
             user-scalable: 是否允许用户缩放 yes/no
-            minimal-ui: iOS 7.1 的 Safari 隐藏地址栏与导航
+            minimal-ui: iOS 7.1 的 Safari 隐藏地址栏与导航（iOS 8 取消）
         -->
         
         <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
@@ -72,6 +72,9 @@
 
         <!-- iOS 图标 -->
 
+        <!-- iOS 8 iPhone 6 plus (retina) -->
+        <link href="/static/images/apple-touch-icon-180x180.png" sizes="180x180" rel="apple-touch-icon">
+
         <!-- iOS 7 iPad (retina) -->
         <link href="/static/images/apple-touch-icon-152x152.png" sizes="152x152" rel="apple-touch-icon">
 
@@ -95,6 +98,12 @@
 
 
         <!-- 启动画面 -->
+
+        <!-- iOS 8 iPhone 6 -->
+        <link href="/static/images/apple-touch-startup-image-750x1294.png" rel="apple-touch-startup-image" media="(device-width: 375px)">
+
+        <!-- iOS 8 iPhone 6 plus -->
+        <link href="/static/images/apple-touch-startup-image-1242x2148.png" rel="apple-touch-startup-image" media="(device-width: 414px)">
 
         <!-- iOS 6 & 7 iPad (retina, portrait) -->
         <link href="/static/images/apple-touch-startup-image-1536x2008.png"
