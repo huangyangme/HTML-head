@@ -9,3 +9,4 @@
 - [issues](https://github.com/AlloyTeam/Mars/tree/master/issues 'web app 开发常见问题')
 - [Favicon Generator](http://realfavicongenerator.net/)
 - [HTML head 头标签](http://padding.me/blog/2014/08/26/html-head-tags/)
+- [How to Add a Favicon to your Site](http://www.w3.org/2005/10/howto-favicon)
