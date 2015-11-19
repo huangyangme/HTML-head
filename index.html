@@ -4,165 +4,189 @@
 <html lang="zh-cmn-Hans">
 <!-- lang属性。更加标准的 lang 属性写法见 <http://zhi.hu/XyIa> -->
 
-    <head>
-        <meta charset="utf-8">
-        <!-- 声明文档使用的字符编码 -->
+<head>
 
-        <meta name="renderer" content="webkit">
-        <!-- 360浏览器 使用 Google Chrome Frame，见 <http://se.360.cn/v6/help/meta.html> -->
+    <meta charset="utf-8">
+    <!-- 声明文档使用的字符编码 -->
 
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-        <!-- 优先使用 IE 最新版本和 Chrome -->
+    <meta name="renderer" content="webkit">
+    <!-- 360浏览器 使用 webkit Frame，见 <http://se.360.cn/v6/help/meta.html> -->
 
-        <meta http-equiv="Cache-Control" content="no-siteapp">
-        <!-- 禁止百度转码。见 <http://m.baidu.com/pub/help.php?pn=22&ssid=0&from=844b&bd_page_type=1> -->
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
-        <!-- Set viewport
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 优先使用 IE 最新版本和 Chrome -->
+
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 禁止百度转码。见 <http://m.baidu.com/pub/help.php?pn=22&ssid=0&from=844b&bd_page_type=1> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <!-- Set viewport
             width: viewport 宽度，可以指定的一个值，也可等于 device-width （设备宽度）
             height: viewport 高度
             initial-scale: 初始缩放比例
             maximum-scale: 最大缩放比例
             minimum-scale: 最小缩放比例
             user-scalable: 是否允许用户缩放 yes/no
-            minimal-ui: iOS 7.1 的 Safari 隐藏地址栏与导航（iOS 8 取消）
+            minimal-ui: iOS 7.1 的 Safari 隐藏地址栏与导航（iOS 8+ 已弃用）
         -->
-        
-        <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
-        <!-- Smart App Banners, 在 iOS 6+ Safari 页面顶部显示此 App 在应用商店的快捷访问链接 -->
 
-        <meta name="HandheldFriendly" content="True">
-        <!-- 移动端友好 -->
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <!-- Smart App Banners, 在 iOS 6+ Safari 页面顶部显示此 App 在应用商店的快捷访问链接 -->
 
-        <meta name="MobileOptimized" content="320">
-        <!-- 强制固定页面布局尺寸 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- 强制固定页面布局尺寸 -->
 
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <!-- 开启全屏模式 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 开启全屏模式 -->
 
-        <!-- （开启全屏模式时，）指定 safari 状态栏背景色：default（白色），black（黑色）和 black-translucent（灰色半透明） -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- （开启全屏模式时）指定 safari 状态栏背景色：default（白色），black（黑色）和 black-translucent（灰色半透明） -->
 
-        <!-- 添加到主屏后图标的名称，iOS6+ -->
-        <meta name="apple-mobile-web-app-title" content="Web App">
+    <meta name="apple-mobile-web-app-title" content="Web App">
+    <!-- 添加到主屏后图标的名称，iOS6+ -->
 
-        <meta name="format-detection" content="telephone=no;address=no;email=no">
-        <!-- set format-detection
+    <meta name="format-detection" content="telephone=no;address=no;email=no">
+    <!-- set format-detection
             telephone=no：禁止自动将页面中的数字识别为电话号码
             address=no：禁止自动地址转为链接
             email=no：禁止自动将email转为链接
         -->
 
+    <title>your title</title>
+    <!-- 页面标题（必须） -->
 
-        <title>your title</title>
-        <!-- 页面标题（必须） -->
+    <meta name="keywords" content="your keywords">
+    <!-- 页面关键词 keywords -->
 
-        <meta name="keywords" content="your keywords">
-        <!-- 页面关键词 keywords -->
+    <meta name="description" content="your description">
+    <!-- 页面内容描述 description -->
 
-        <meta name="description" content="your description">
-        <!-- 页面内容描述 description -->
+    <meta name="author" content="author,email address">
+    <!-- 定义网页作者 author -->
 
-        <meta name="author" content="author,email address">
-        <!-- 定义网页作者 author -->
+    <meta name="robots" content="index,follow">
+    <!-- 定义网页搜索引擎索引方式。
+            all：文件将被检索，且页面上的链接可以被查询；
+            none：文件将不被检索，且页面上的链接不可以被查询；
+            index：文件将被检索；
+            follow：页面上的链接可以被查询；
+            noindex：文件将不被检索；
+            nofollow：页面上的链接不可以被查询。
+            见 <http://msdn.microsoft.com/zh-cn/library/ff724037(v=expression.40).aspx> 
+          -->
 
-        <meta name="robots" content="index,follow">
-        <!-- 定义网页搜索引擎索引方式。见 <http://msdn.microsoft.com/zh-cn/library/ff724037(v=expression.40).aspx> -->
+    <meta http-equiv="refresh" content="0;url=" />
+    <!-- 页面重定向和刷新 content内的数字代表时间（秒），既多少时间后刷新。如果加url,则会重定向到指定网页（搜索引擎能够自动检测，也很容易被引擎视作误导而受到惩罚）-->
+
+    <link href="/static/images/apple-touch-icon-180x180.png" sizes="180x180" rel="apple-touch-icon">
+    <!-- iOS 8 iPhone 6 plus (retina) -->
+
+    <link href="/static/images/apple-touch-icon-152x152.png" sizes="152x152" rel="apple-touch-icon">
+    <!-- iOS 7 iPad (retina) -->
+
+    <link href="/static/images/apple-touch-icon-144x144.png" sizes="144x144" rel="apple-touch-icon">
+    <!-- iOS 6 iPad (retina) -->
+
+    <link href="/static/images/apple-touch-icon-120x120.png" sizes="120x120" rel="apple-touch-icon">
+    <!-- iOS 7 iPhone (retina) -->
+
+    <link href="/static/images/apple-touch-icon-114x114.png" sizes="114x114" rel="apple-touch-icon">
+    <!-- iOS 6 iPhone (retina) -->
+
+    <link href="/static/images/apple-touch-icon-76x76.png" sizes="76x76" rel="apple-touch-icon">
+    <!-- iOS 7 iPad -->
+
+    <link href="/static/images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
+    <!-- iOS 6 iPad -->
+
+    <link href="/static/images/apple-touch-icon-57x57.png" sizes="57x57" rel="apple-touch-icon">
+    <!-- iOS 6 iPhone -->
 
 
-        <!-- iOS 图标 -->
+    <!-- 启动画面 -->
 
-        <!-- iOS 8 iPhone 6 plus (retina) -->
-        <link href="/static/images/apple-touch-icon-180x180.png" sizes="180x180" rel="apple-touch-icon">
+    <link href="/static/images/apple-touch-startup-image-750x1294.png" rel="apple-touch-startup-image" media="(device-width: 375px)">
+    <!-- iOS 8 iPhone 6 -->
 
-        <!-- iOS 7 iPad (retina) -->
-        <link href="/static/images/apple-touch-icon-152x152.png" sizes="152x152" rel="apple-touch-icon">
+    <link href="/static/images/apple-touch-startup-image-1242x2148.png" rel="apple-touch-startup-image" media="(device-width: 414px)">
+    <!-- iOS 8 iPhone 6 plus -->
 
-        <!-- iOS 6 iPad (retina) -->
-        <link href="/static/images/apple-touch-icon-144x144.png" sizes="144x144" rel="apple-touch-icon">
-
-        <!-- iOS 7 iPhone (retina) -->
-        <link href="/static/images/apple-touch-icon-120x120.png" sizes="120x120" rel="apple-touch-icon">
-
-        <!-- iOS 6 iPhone (retina) -->
-        <link href="/static/images/apple-touch-icon-114x114.png" sizes="114x114" rel="apple-touch-icon">
-
-        <!-- iOS 7 iPad -->
-        <link href="/static/images/apple-touch-icon-76x76.png" sizes="76x76" rel="apple-touch-icon">
-
-        <!-- iOS 6 iPad -->
-        <link href="/static/images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
-
-        <!-- iOS 6 iPhone -->
-        <link href="/static/images/apple-touch-icon-57x57.png" sizes="57x57" rel="apple-touch-icon">
-
-
-        <!-- 启动画面 -->
-
-        <!-- iOS 8 iPhone 6 -->
-        <link href="/static/images/apple-touch-startup-image-750x1294.png" rel="apple-touch-startup-image" media="(device-width: 375px)">
-
-        <!-- iOS 8 iPhone 6 plus -->
-        <link href="/static/images/apple-touch-startup-image-1242x2148.png" rel="apple-touch-startup-image" media="(device-width: 414px)">
-
-        <!-- iOS 6 & 7 iPad (retina, portrait) -->
-        <link href="/static/images/apple-touch-startup-image-1536x2008.png"
-              media="(device-width: 768px) and (device-height: 1024px)
+    <link href="/static/images/apple-touch-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
                  and (orientation: portrait)
-                 and (-webkit-device-pixel-ratio: 2)"
-              rel="apple-touch-startup-image">
+                 and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- iOS 6 & 7 iPad (retina, portrait) -->
 
-        <!-- iOS 6 & 7 iPad (retina, landscape) -->
-        <link href="/static/images/apple-touch-startup-image-1496x2048.png"
-              media="(device-width: 768px) and (device-height: 1024px)
+    <link href="/static/images/apple-touch-startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
                  and (orientation: landscape)
-                 and (-webkit-device-pixel-ratio: 2)"
-              rel="apple-touch-startup-image">
+                 and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- iOS 6 & 7 iPad (retina, landscape) -->
 
-        <!-- iOS 6 iPad (portrait) -->
-        <link href="/static/images/apple-touch-startup-image-768x1004.png"
-              media="(device-width: 768px) and (device-height: 1024px)
+    <link href="/static/images/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
                  and (orientation: portrait)
-                 and (-webkit-device-pixel-ratio: 1)"
-              rel="apple-touch-startup-image">
+                 and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <!-- iOS 6 iPad (portrait) -->
 
-        <!-- iOS 6 iPad (landscape) -->
-        <link href="/static/images/apple-touch-startup-image-748x1024.png"
-              media="(device-width: 768px) and (device-height: 1024px)
+    <link href="/static/images/apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
                  and (orientation: landscape)
-                 and (-webkit-device-pixel-ratio: 1)"
-              rel="apple-touch-startup-image">
+                 and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <!-- iOS 6 iPad (landscape) -->
 
-        <!-- iOS 6 & 7 iPhone 5 -->
-        <link href="/static/images/apple-touch-startup-image-640x1096.png"
-              media="(device-width: 320px) and (device-height: 568px)
-                 and (-webkit-device-pixel-ratio: 2)"
-              rel="apple-touch-startup-image">
+    <link href="/static/images/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+                 and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- iOS 6 & 7 iPhone 5 -->
 
-        <!-- iOS 6 & 7 iPhone (retina) -->
-        <link href="/static/images/apple-touch-startup-image-640x920.png"
-              media="(device-width: 320px) and (device-height: 480px)
-                 and (-webkit-device-pixel-ratio: 2)"
-              rel="apple-touch-startup-image">
+    <link href="/static/images/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- iOS 6 & 7 iPhone (retina) -->
 
-        <!-- iOS 6 iPhone -->
-        <link href="/static/images/apple-touch-startup-image-320x460.png"
-              media="(device-width: 320px) and (device-height: 480px)
-                 and (-webkit-device-pixel-ratio: 1)"
-              rel="apple-touch-startup-image">
+    <link href="/static/images/apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <!-- iOS 6 iPhone -->
 
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
-        <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 
-        <!-- Tile icon for Win8 & IE11 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="/static/images/mstile-144x144.png">
-        <meta name="msapplication-TileColor" content="#222222">
-    </head>
+    
+    <meta name="msapplication-TileImage" content="/static/images/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#222222">
+    <!-- Tile icon for Win8 & IE11 (144x144 + tile color) -->
 
-    <body>
-    </body>
+    
+    <meta name="HandheldFriendly" content="true">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+
+    <meta name="MobileOptimized" content="320">
+    <!-- 微软的老式浏览器 -->
+
+    <meta name="screen-orientation" content="portrait">
+    <!-- uc强制竖屏 -->
+
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+
+    <meta name="full-screen" content="yes">
+    <!-- UC强制全屏 -->
+
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ强制全屏 -->
+
+    <meta name="browsermode" content="application">
+    <!-- UC应用模式 -->
+
+    <meta name="x5-page-mode" content="app">
+    <!-- QQ应用模式 -->
+
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- windows phone 点击无高光 -->
+
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 禁用浏览器缓存 -->
+</head>
+
+<body>
+</body>
+
 </html>
